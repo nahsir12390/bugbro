@@ -8,7 +8,7 @@
   $grouped = auth()->user()->unreadNotifications->groupBy(fn($n) => $n->data['sender_id']);
 @endphp
 
-{{-- ✅ Notifications --}}
+{{--  Notifications --}}
 @foreach($grouped as $senderId => $notifications)
   @php $latest = $notifications->last(); @endphp
   <div class="flex items-start gap-3 bg-blue-200 border-l-4 border-blue-500 text-blue-900 dark:bg-blue-900 dark:text-blue-100 px-4 py-3 rounded mb-4">
