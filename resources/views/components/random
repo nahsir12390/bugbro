@@ -1,0 +1,3 @@
+ <x-nav-link-phone href="{{route('home')}}"  :active="request()->route()->getName()==='home'" >Home</x-nav-link-phone>
+        <x-nav-link-phone href="{{route('about')}}" :active="request()->route()->getName()==='about'" >About</x-nav-link-phone>
+        <x-nav-link-phone href="{{route('contact')}}" :active="request()->route()->getName()==='contact'" >Contact</x-nav-link-phone>
